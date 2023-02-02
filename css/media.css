@@ -1,0 +1,89 @@
+@media (max-width: 1230px) {
+  .nav-list {
+    display: none;
+  }
+  .nav-button {
+    display: block;
+  }
+  .nav.open .nav-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 2;
+    padding: 46px 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    font-size: 34px;
+    font-weight: 600;
+  }
+  .nav.open .nav-list .nav-link {
+    color: #606060;
+    transition: 0.2s;
+  }
+  .nav.open .nav-list .nav-link:hover {
+    color: #000000;
+  }
+  .nav.open .nav-list .nav-link.active {
+    color: #000000;
+  }
+  .nav-button {
+    position: absolute;
+    z-index: 2;
+    top: 46px;
+    right: 30px;
+  }
+  .nav.open .nav-button {
+    position: fixed;
+  }
+  .header-row {
+    margin-bottom: 60px;
+  }
+  .header-img {
+    text-align: center;
+  }
+  .header-row {
+    flex-direction: column;
+    column-gap: 20px;
+  }
+  .header-content {
+    margin-top: 0;
+  }
+}
+@media (max-width: 700px) {
+  .services-row {
+    flex-direction: column;
+  }
+  .header-heading {
+    font-size: 34px;
+    line-height: 1;
+  }
+  .header-heading span {
+    font-size: 28px;
+  }
+  .services, .portfolio, .contacts {
+    padding: 60px 0;
+  }
+  .portfolio-title {
+    margin-bottom: 50px;
+  }
+  .project-img {
+    margin-bottom: 30px;
+  }
+  .project + .project {
+    margin-top: 55px;
+  }
+  .contacts-title, .contacts-content {
+    margin-bottom: 20px;
+  }
+  .contacts-btn {
+    margin-bottom: 70px;
+  }
+  .contacts-socials {
+    margin-bottom: 20px;
+    column-gap: 50px;
+  }
+}

@@ -1,0 +1,231 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+$gray: #F1F1F1;
+$black: #000000;
+$yellow: #FDA300;
+$dgray:#606060;
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 1230px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+
+// HEADER
+.header{
+    background-color: $gray;
+    padding-top: 46px;
+}
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 76px;
+    .logo{
+        font-weight: 700;
+        font-size: 32px;
+        color: $black ;
+        padding-right: 12px;
+        padding-bottom: 3px;
+        line-height: 1;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            display: block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: $yellow;
+        }
+    }
+}
+
+// NAV
+
+.nav-list{
+    display: flex;
+    column-gap: 50px;
+    font-weight: 500;
+    font-size: 14px;
+    .nav-link{
+        color: $black;
+        transition: .2s;
+        &:hover{
+            color:$dgray;
+        }
+        &.active{
+            color:$dgray;
+        }
+    }
+}
+.nav-button{
+    display: none;
+    svg{
+        width: 33px;
+        height: 22px;
+    }
+}
+
+//header content 
+.header-row{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    .header-heading{
+        color: $black;
+        font-size: 44px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 2;
+    }
+}
+.header-content{
+    max-width: 500px;
+    margin-top: 124px;
+}
+
+
+
+// services
+.services{
+    padding: 90px 0;
+}
+.services-row{
+    display: flex;
+    //justify-content: space-between;
+    column-gap: 30px;
+    flex-wrap: wrap;
+    row-gap: 60px;
+    .service-card{
+        min-width: 315px;
+        flex: 1 1 0; 
+        svg{
+            width: 68px;
+            height: 68px;
+            margin-bottom: 30px;
+        }
+        h3{
+            font-weight: 600;
+            font-size: 24px;
+            text-transform: uppercase;
+            color: $black;
+            margin-bottom: 10px;
+        }
+        p{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 2;
+            color: $black;
+        }
+    }
+}
+
+
+//portfolio
+.portfolio{
+    background-color: $gray;
+    padding: 90px 0;
+}
+.portfolio-title{
+    margin-bottom: 70px;
+}
+.title-1{
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 51px;
+    text-align: center;
+}
+.project{
+    text-align: center;
+    img{
+        margin-bottom: 40px;
+    }
+    .project-title{
+        text-decoration:underline;
+        a{
+        color: $black;
+        }
+    }
+}
+.project+.project{
+    margin-top: 90px;
+}
+
+
+//Contacts
+.contacts{
+    padding: 90px 0;
+    text-align: center;
+    .contacts-title{
+        margin-bottom: 40px;
+    }
+    .contacts-content{
+        margin-bottom: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 296px;
+        p{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 27px;
+            text-align: center;
+        }
+    }
+    .contacts-btn{
+        margin-bottom: 80px;
+        .btn{
+            background-color: #070707;
+            padding: 7px 22px;
+            display: inline-block;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 27px;
+            text-align: center;
+            color: #FFFFFF;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color .3s ease-in, top .3s ease-in;
+            &:hover{
+                background-color: #232323;
+            }
+            &:active{
+                position: relative;
+                top: 1px;
+                background-color: #000000;
+            }
+        }
+
+    }
+    .contacts-socials{
+        display: flex;
+        justify-content: center;
+        column-gap: 60px;
+        margin-bottom: 40px;
+        svg{
+            width: 40px;
+            height: 40px;
+        }
+    }
+    .contacts-footer{
+        p{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            text-align: center;
+            color: #828282;}
+    }
+}
